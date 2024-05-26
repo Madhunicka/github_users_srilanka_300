@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //function
     async function fetchUsers() {
         try {
-            const response = await fetch('https://ghbackend-ga5hfcoeg-madhunickas-projects.vercel.app/get-users');
+            const response = await fetch('https://ghbackend-tawny.vercel.app/get-users');
             if (response.ok) {
                 const users = await response.json();
                 alert('Users fetched successfully');
