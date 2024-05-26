@@ -134,6 +134,11 @@ app.get('/fetch-and-store-users', async (req, res) => {
     }
 });
 
+//hell
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 app.get('/get-users', async (req, res) => {
     try {
         const users = await User.find({});
